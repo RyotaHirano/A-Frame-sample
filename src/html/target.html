@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>A-Frame Sample Target</title>
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-light intensity="1.5" position="-10 10 0" type="point"></a-light>
+
+      <a-sphere id="target" color="#404040" radius="0.5">
+        <a-animation attribute="position" from="-10 0 -20" to="6 4 -3" dur="1500" repeat="indefinite" fill="forwards" direction="alternate" easing="ease-in-out-cubic"></a-animation>
+      </a-sphere>
+
+      <a-box width="0.5" depth="2" height="0.5" color="#F16745" look-at="#target" position="0 0 1"></a-box>
+    </a-scene>
+  </body>
+</html>
