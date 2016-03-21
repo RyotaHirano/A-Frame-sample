@@ -1,1 +1,1 @@
-# starterKit_webpack
+# A-Frame-sample
